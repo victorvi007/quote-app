@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="img/logo.png">
+	<link rel="color-scheme" content="dark">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<title>Quote app</title>
+</head>
+<body>
+	<div class="main" id="quotes">
+		<div class="buttons">
+			<a class="button" id="add-new-quote">Add a New Quote</a>
+			<a class="button" id="new-quote">Get Another Quote</a>
+		</div>
+		
+		<p id="text"></p>
+		<p id="author-wrapper"> -
+			<span id="author"></span>
+		</p>
+	</div>
+	<div class="main hide" id="add-quote">
+		<p>Add a New Quote</p>
+		<input type="text" name="author" id="quote-author" placeholder="Author">
+		<p class="hide" id="form-error">Please input a quote.</p>
+		<textarea id="add-quote-text" rows='2' name="quote" maxLength="400" placeholder="Quote"></textarea>
+		<div class="buttons">
+			<a class="button" id="submit-quote">Add New Quote</a>
+			<a class="button" id="new-quote-2">Back to Quotes</a>
+		</div>
+	</div>
+	<footer class="credits">
+		<p>Made with love by
+			<a href="https://twitter.com/victorukwuezeh">@victorukwuezeh</a>.
+		</p>
+		<p id="photo-credit">Photo by Steve Huntington on Unsplash</p>
+	</footer>
+	
+	
+	<script src="main.js"> </script>
+</body>
+</html>
